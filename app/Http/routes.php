@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
+
 Route::get('/user', 'User_c@index');
+
+Route::get('/model','BelajarModelController@index');
+

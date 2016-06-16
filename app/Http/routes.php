@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/', function () {
+    //return view('welcome');
+    //print_r(app()->make('redis'));
+    $redis = app()->make('redis');
+    $redis->set("key1", "testValue");
+    return $redis->get("key1");
 });
 
 

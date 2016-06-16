@@ -1,4 +1,4 @@
 # laravel
 
-.env <br />
-php artisan key:generate
+Create .env <br />
+generate key : php artisan key:generate
